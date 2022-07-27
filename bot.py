@@ -29,14 +29,14 @@ async def start(event):
 		      [Button.url('➕ Məni Qrupa əlavə et ➕', 'http://t.me/Rahid_Tag_Bot?startgroup=a')],
                       [Button.url('Dəstək Qrupu 👨‍💻', 'https://t.me/Rahid_Support')],
                       [Button.url('Rəsmi Kanal 💠', 'https://t.me/Rahid_44')],
-                      [Button.url('Reklam Kanalı 📢', 'https://t.me/Rahid')],
+                      [Button.url('Reklam Kanalı 📢', 'https://t.me/Rahid_Reklam')],
 		      [Button.url('Owner 👨🏻‍💻', 'https://t.me/Rahid_2003')] 
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**@Rahid_Tag_Bot əmrləri 🤖**\n\n**/sehidler - İstifadəçiləri Şəhidlərimizin adları ilə etiket atır . . !**\n**/cancel - Etiketləmə prosesini dayandırır . . !**\n**/tag < Mesaj > - İstifadəçiləri 5-li etiket atır . . !**\n**/etag < Mesaj > - İstifadəçiləri emoji ilə etiket atır . . !**\n**/mtag < Mesaj > - İstifadəçiləri mafia rolları ilə etiket atır . . !**\n**/tektag < Mesaj > - İstifadəçiləri tək-tək etiket atır . . !\n**/admins < Mesaj > - Yönəticiləri tək-tək etiket atır . . !**\n**/btag < Mesaj > - İstifadəçiləri bayrağlar ilə etiketləyir**\n**/stag < Mesaj > - İstifadəçiləri Şəhərlərimizin adları ilə etiket atır . . !**"
+  helptext = "**@Rahid_Tag_Bot əmrləri 🤖**\n\n**/sehidler > Qrupdakı istifadəçilər üçün Şəhidlərimizin adları ilə etiket atır . . !**\n**/cancel > Etiketləmə prosesini dayandırır . . !**\n**/tag < Mesaj > Qrupdakı istifadəçilər üçün 5-li etiket atır . . !**\n**/etag < Mesaj > Qrupdakı istifadəçilər üçün emoji ilə etiket atır . . !**\n**/mtag < Mesaj > Qrupdakı istifadəçilər üçün mafia rolları ilə etiket atır . . !**\n**/tektag < Mesaj > Qrupdakı istifadəçilər üçün tək-tək etiket atır . . !\n**/admins < Mesaj > Qrupdakı adminlər üçün tək-tək etiket atır . . !**\n**/btag < Mesaj > Qrupdakı istifadəçilər üçün bayrağlar ilə etiket atır . . !**\n**/stag < Mesaj > Qrupdakı istifadəçilər üçün Şəhərlərimizin adları ilə etiket atır . . !**"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('➕ Məni Qrupa əlavə et ➕', 'http://t.me/Rahid_Tag_Bot?startgroup=a')],
